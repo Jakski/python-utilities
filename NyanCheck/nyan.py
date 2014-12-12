@@ -37,10 +37,6 @@ class nyanIcon:
 			return (Gtk.StatusIcon.position_menu(menu, icon))
 		self.menu.popup(None, None, pos, self.trayicon, button, time)
 	def checkNyan( self, *args ):
-		"""Checks for new posts on http://nyanyan.it/
-		
-		Takes no arguments and return true if there is new post.
-		"""
 		tempsite = getNyan()
 		if tempsite != self.site:
 			self.site = tempsite
